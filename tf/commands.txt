@@ -1,0 +1,8 @@
+terraform plan
+terraform apply
+terraform output -raw kube_config > kubeconfig.yaml
+export KUBECONFIG=$(pwd)/kubeconfig.yaml
+kubectl apply -f k8s-ai
+kubectl create configmap nest-app-config --from-env-file=.env
+kubectl apply -f k8s-nest
+terraform destroy
