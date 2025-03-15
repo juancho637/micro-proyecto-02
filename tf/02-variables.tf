@@ -14,7 +14,7 @@ variable "aks_cluster_name" {
 }
 
 variable "node_count" {
-  default     = 1
+  default     = 2
   description = "Número de nodos en el cluster AKS."
 }
 
