@@ -4,12 +4,12 @@ variable "resource_group_location" {
 }
 
 variable "resource_group_name" {
-  default     = "recognition-k8s-resources"
+  default     = "proyecto-2-k8s-resources"
   description = "Nombre del grupo de recursos."
 }
 
 variable "aks_cluster_name" {
-  default     = "recognition-aks-cluster"
+  default     = "proyecto-2-aks-cluster"
   description = "Nombre del cluster AKS."
 }
 
